@@ -9,5 +9,5 @@ import { NavComponent } from "./nav/nav.component";
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'sumProd';
+ 
 }
