@@ -1,5 +1,21 @@
-<ul>
-    <li><a href="http://" target="_blank" rel="noopener noreferrer">sumnistradores</a></li>
-    <li><a href="http://" target="_blank" rel="noopener noreferrer">productos</a></li>
-    <li><a href="http://" target="_blank" rel="noopener noreferrer">Productos Suministrados</a></li>
-</ul>
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>SumProd</span>
+    <button mat-button [matMenuTriggerFor]="menu">Gestion SumProd</button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>sumnistradores</button>
+        <button mat-menu-item>productos</button>
+        <button mat-menu-item>Productos Suministrados</button>
+    </mat-menu>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+    </button>
+</mat-toolbar>
+
+
